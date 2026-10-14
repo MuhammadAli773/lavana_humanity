@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hey Ivana</title>
+<style>
+  :root{ --bg:#1d2a2f; --ink:#f3efe8; --muted:#b4c2c2; --accent:#e8c27a; --line:#3a4b50; }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#eef1ee; --ink:#1d2a2f; --muted:#4b5f64; --accent:#8a5a14; --line:#c4cfcc; }
+  }
+  *{box-sizing:border-box}
+  body{ margin:0; background:var(--bg); color:var(--ink); font-family:Georgia,"Times New Roman",serif;
+        display:flex; justify-content:center; padding:48px 24px; }
+  main{max-width:30rem; width:100%}
+  .moon{ width:52px; height:52px; border-radius:50%; box-shadow:inset -13px -4px 0 0 var(--accent);
+         margin-bottom:26px; opacity:0; animation:rise 1.2s ease forwards; }
+  h1{font-weight:400; font-size:clamp(2.2rem,8vw,3rem); line-height:1.1; margin:0 0 16px}
+  p{color:var(--muted); font-size:1.1rem; line-height:1.7; margin:0 0 18px}
+  .go{ display:inline-block; color:var(--ink); text-decoration:none; border:1px solid var(--accent);
+       padding:12px 22px; border-radius:999px; margin:6px 0 30px; transition:background .25s,color .25s; }
+  .go:hover,.go:focus-visible{background:var(--accent); color:var(--bg)}
+  .go:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+  .note{ border-left:2px solid var(--accent); padding-left:16px; margin-top:8px }
+  .note p{margin-bottom:12px}
+  .note strong{color:var(--ink); font-weight:400}
+  @keyframes rise{from{opacity:0; transform:translateY(10px)}to{opacity:1; transform:none}}
+  @media (prefers-reduced-motion: reduce){.moon{animation:none; opacity:1}}
+</style>
+</head>
+<body>
+<main>
+  <div class="moon" aria-hidden="true"></div>
+  <h1>Hey Ivana 👋</h1>
+  <p>It's really me. I made this little page so you'd know this invite is real and not some random message.</p>
+  <p>i see how much you pain in i want to help you </p>
+  <p>I'd just like to talk, be a friend, and be there if you till you really become good</p>
+  <a class="go" id="ig" href="https://instagram.com/itz_me7w" target="_blank" rel="noopener">Come say hi on Instagram</a>
+
+  <div class="note">
+    <p><strong>A few honest promises:</strong></p>
+    <p>I'll never ask you like i did this good it is as human</p>
+    <p>feel easy to message me sister</p>
+    <p>actually there i cant ask directly they say hep other limited to their place in that app and we ususally dont use it </p>
+  </div>
+</main>
+<script>
+  document.getElementById('ig').addEventListener('click', function(){ this.textContent = 'Opening Instagram…'; });
+</script>
+</body>
+</html>
